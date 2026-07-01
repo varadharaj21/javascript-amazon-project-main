@@ -105,7 +105,7 @@ document.querySelectorAll(".js-delete-link")
 .forEach( (link)=>{
   link.addEventListener( 'click', ()=>{
     const deleteItemId = link.dataset.productId;
-    console.log("this is delete id " + deleteItemId);
+    // console.log("this is delete id " + deleteItemId);
     deleteItemFromCart(deleteItemId);
 
     const container = document.querySelector(`.js-cart-item-container-${deleteItemId}`)
